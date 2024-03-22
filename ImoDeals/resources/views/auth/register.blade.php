@@ -26,7 +26,22 @@
                         <div class="col-md-6">
                             <label for="lastname" class="form-label">Last name</label>
                             <input id="lastname" type="text" name="lastname" id="lastname" class="form-control"
-                                value="{{ old('lastname') }}" required autocomplete="lastname" autofocus>
+                            <div class="col-md-6">
+                                <label for="password" class="form-label">Password</label>
+                                <input id="password" type="password" name="password"
+                                    class="form-control" value="{{ old('password') }}" required autocomplete="password"
+                                    autofocus>
+                                <small id="error-register-password" class="text-danger fw-bold"></small>
+
+                            </div>
+                            <div class="col-md-6">
+                                <label for="password-confirm" class="form-label">Password confirmation</label>
+                                <input  type="password" name="password-confirm"
+                                    id="password-confirm" class="form-control" value="{{ old('password-confirm') }}" required
+                                    autocomplete="password-confirm" autofocus>
+                                <small id="error-register-password-confirm" class="text-danger fw-bold"></small>
+
+                            </div>        value="{{ old('lastname') }}" required autocomplete="lastname" autofocus>
                             <small id="error-register-lastname" class="text-danger fw-bold"></small>
 
                         </div>

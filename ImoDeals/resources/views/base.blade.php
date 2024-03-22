@@ -9,7 +9,7 @@
     <title>{{ config('app.name') }}-@yield('title')</title>
 
    <link rel="stylesheet" href="{{ asset('assets/app.css') }}">
-   <link rel="icon" type="image/png" href="{{ asset('assets/img/icone/imoDeals-icone1.png') }}">
+   <link rel="icon" type="image/png" href="{{ asset('assets/img/icone/imo-deals-icon.jpg') }}">
 </head>
 
 <body @guest

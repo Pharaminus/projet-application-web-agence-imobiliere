@@ -109,7 +109,7 @@ $('#agreeterms').change(function(){
 
 /*
 
-code pour la modifictaion des utilisateurs
+===========( code pour la modifictaion des utilisateurs )==============
 
 */
 
@@ -133,7 +133,44 @@ function modifier(id){
     // alert(nom+" "+email+" "+role+" "+permission);
 }
 
+// ===========( code pour l'ajout d'un utilisateur dans l'application )=========
 
+
+function ajouter(id){
+
+
+    document.getElementById("tab-data").style.display = 'none';
+    document.getElementById("form-modif").style.display = 'block';
+    document.getElementById("role-admin").style.display = 'none';
+    document.getElementById("block-stat").style.display = 'none';
+
+    // document.getElementsByTagName("pass-field")[0].style.display = 'block';
+    // document.getElementsByTagName("pass-field")[1].style.display = 'block';
+    document.querySelector("#pass-field-lf").style.display = "block";
+    document.querySelector("#pass-field-rg").style.display = "block";
+
+    document.getElementById('name').value = "";
+    document.getElementById('email').value = "";
+    document.getElementById('role').value = "";
+}
+
+// ============( fonction pour modifier un role ou attribuer une permission )==============
+
+function addRole_addPermission(id){
+    document.getElementById("tab-data").style.display = 'none';
+    document.getElementById("form-modif").style.display = 'block';
+    document.getElementById("role-admin").style.display = 'none';
+    document.getElementById("block-stat").style.display = 'none';
+
+    // document.getElementsByTagName("pass-field")[0].style.display = 'block';
+    // document.getElementsByTagName("pass-field")[1].style.display = 'block';
+    // document.querySelector("#pass-field-lf").style.display = "block";
+    // document.querySelector("#pass-field-rg").style.display = "block";
+
+    document.getElementById('name').readOnly = 'true';
+    document.getElementById('email').readOnly = 'true';
+    // document.getElementById('role').readOnly = 'true';
+}
 
 
 

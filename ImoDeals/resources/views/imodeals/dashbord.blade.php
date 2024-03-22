@@ -118,11 +118,11 @@
                 <div class="container-xl  w-50">
                     <div class="row ">
                         <div class="col-6">
-                            <button class="bouton-admin btn btn-success ">Ajouter un utilisateur</button>
+                            <button class="bouton-admin btn btn-success " id="add-user" onclick="ajouter(id)">Ajouter un utilisateur</button>
 
                         </div>
                         <div class="col-6">
-                            <button class="bouton-admin btn btn-success ">Attribuer un role</button>
+                            <button class="bouton-admin btn btn-success " onclick="addRole_addPermission(id)">Attribuer un role</button>
                         </div>
                     </div>
                 </div>
